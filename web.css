@@ -1,0 +1,650 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Estilos básicos para móviles */
+.navbar {
+    height: 100px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.navbar-nav {
+    text-align: center;
+    background-color: rgba(9, 9, 121, 1);
+}
+
+.navbar-nav .nav-item {
+    margin: 0 auto;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+/* Estilos generales */
+.navbar-nav .nav-link {
+    color: black;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 992px) {
+    .navbar-nav {
+        text-align: left;
+        background-color: transparent;
+    }
+    
+    .navbar-nav .nav-link {
+        color: white !important;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+ /* CONTENIDO PRINCIPAL */
+
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .contenido h2,
+        .contenido h3 {
+            width: 70%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .contenido p {
+            width: 70%;
+            text-align: justify;
+        }
+
+        .contenido button,
+        .boton {
+            margin-top: 50px;
+            padding: 15px;
+            border-radius: 20px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+        }
+       
+        .boton a{
+            text-decoration: none !important;
+        }
+        
+
+        .boton-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenido img {
+            width: 90%;
+            margin-top: 100px;
+        }
+
+        .menosBorde{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .borde-abajo {
+            font-size: 2em;
+            border-bottom: 2px solid blue;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            text-align: center;
+            width: 70%;
+        }
+
+        .logo-empresas {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .logo-empresas img {
+            object-fit: contain;
+            width: 16%;
+        }
+
+        .contenido-boton button {
+            padding: 10px;
+            border-radius: 20px 20px 20px 20px;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        #menu-footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            padding: 20px;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+        }
+        
+        #menu-footer .row {
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        #menu-footer .col {
+            margin: 10px 0;
+        }
+        
+        /* Estilos para pantallas más grandes */
+        @media (min-width: 768px) {
+            #menu-footer {
+                flex-direction: row;
+                justify-content: space-around;
+                height: 200px;
+                padding: 0 20px;
+            }
+        
+            #menu-footer .row {
+                text-align: left;
+            }
+        
+            #menu-footer .col {
+                margin: 0;
+            }
+        }
+
+        #menu-1 p:nth-child(1) {
+            font-weight: bold;
+        }
+
+        #menu-2 p:nth-child(1) {
+            font-weight: bold;
+        }
+
+        #menu-3 p:nth-child(1) {
+            font-weight: bold;
+        }
+
+        #menu-1,
+        #menu-2,
+        #menu-3,
+        #menu-4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+
+        /*JUNIOR*/
+
+        #texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #texto img {
+            width: 50%;
+        }
+
+        #carta-texto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #carta-texto p {
+            width: 70%;
+        }
+
+        #carta-texto h3 {
+            font-size: 1.5em;
+            color: rgb(128, 128, 194);
+            margin-top: 1em;
+            margin-bottom: 1em;
+            font-weight: bold;
+        }
+
+        .boton {
+            margin-bottom: 3em;
+        }
+
+        .boton a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /*EMPRESAS*/
+
+        #entrada-empresas {
+            text-align: center;
+        }
+
+        #empresas {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 30px;
+
+        }
+
+        #carta-empresa {
+            margin: 0 auto;
+            text-align: center;
+            width: 80%;
+            margin-bottom: 80px;
+        }
+
+
+        #carta-empresa h3 {
+            margin-bottom: 25px;
+            color: rgb(128, 128, 194);
+            font-size: 2em;
+            font-weight: bold;
+
+        }
+
+
+        #carta-icono {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        #icono-empresas {
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+
+        }
+
+        #carta-icono {
+            margin-top: 30px;
+        }
+
+        #carta-icono i {
+            color: black;
+            font-size: 3em;
+        }
+
+        #carta-icono p {
+            text-align: center;
+        }
+
+        #img-empresa img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 50%;
+        }
+
+
+        /* FORMULARIOS */
+
+        /* Estilos para el contenedor del formulario */
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #dddbdb;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .input-error {
+            border: 2px solid red;
+        }
+
+        .form-container button[type="submit"] {
+            padding: 10px 20px;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .form-container button[type="submit"]:hover {
+            transform: scale(1.05);
+        }
+
+
+
+        .texto-centrado {
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 50px;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+            margin-top: 50px;
+            font-size: 2.5em;
+        }
+
+        @media (max-width: 768px) {
+            .texto-centrado {
+                font-size: 1.5rem;
+            }
+        }
+
+        /*CONTENEDOR FORMULARIOS*/
+
+        #contenedor-form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+            height: 100vh;
+            margin-top: 10px;
+
+        }
+
+        /*prueba imagen Alberto*/
+
+        #img-alberto {
+            background-image: url(img/Alberto_imagen.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 200px;
+            height: 300px;
+            border-radius: 200px;
+        }
+
+        #logo {
+            background-image: url(img/auj-white-logo-no-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Oferta empleo */
+        .oferta-empleo {
+            background-color: #ece7e7;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid blue;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+
+
+
+
+
+
+
+        @media only screen and (min-width: 1024px) {
+            header {
+                display: grid;
+                grid-template-columns: 1fr 1fr 2fr;
+            }
+
+            .menu {
+                display: flex;
+                color: white;
+                transform: translatex(0%);
+                transition: none;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                height: 100px;
+                position: static;
+                width: 70%;
+            }
+
+            .menu li {
+                margin-right: 50px;
+            }
+
+
+            .inicio {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inicio .ini,
+            .reg {
+                margin-right: 20px;
+            }
+
+            .ini,
+            .reg {
+                padding: 13px;
+                border: 1px solid white;
+                border-radius: 20px 20px 20px 20px;
+                background-color: rgb(129, 127, 255);
+
+            }
+
+
+            #icono {
+                display: none;
+            }
+
+
+            /*Empresas*/
+
+            #entrada-empresas {
+                margin-top: 80px;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+
+            #empresas {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                text-align: center;
+                height: 300px;
+            }
+
+            #carta-empresa {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            #icono-empresas {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            /* Foto Alberto */
+
+            #img-alberto {
+                margin: 0 auto;
+                width: 400px;
+                height: 400px;
+            }
+
+            /* Información postulante */
+
+            .container-info {
+                height: 100vh;
+                margin-top: 50px;
+            }
+
+            .postulante-info {
+                background-color: #ece7e7;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 20px;
+                border: 2px solid blue;
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 40px;
+            }
+
+
+
+            .boton-center {
+                text-align: center;
+            }
+
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            color: red;
+        }
+
+        /*Perfil empresa*/
+
+        .containerBtn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #verPerfilBtn {
+            margin-top: 20px;
+            padding: 30px;
+            border: none;
+            color: #056BBA;
+        }
+
+        #verPerfilBtn:hover {
+            background-color: #056BBA;
+            color: white;
+        }
+
+        /* Paginacion Admin */
+
+        .container nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .containerAll {
+            height: 100vh;
+        }
+
+        .boton-m {
+            width: 100%;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: blue !important;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .boton-m:hover {
+            background-color: darkblue;
+            transform: scale(1.05);
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 768px) {
+            .boton-m {
+                width: auto;
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+
+        .botones {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .botones button {
+            padding: 10px;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .botones button:hover {
+            transform: scale(1.05);
+        }
+        
+        .botones button a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        @media (min-width: 600px) {
+            .botones {
+                flex-direction: row;
+            }
+        }
